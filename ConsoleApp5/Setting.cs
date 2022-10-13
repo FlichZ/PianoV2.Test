@@ -39,14 +39,10 @@ namespace ConsoleApp5
                         }
                         break;
                 }
-                Line Octave = new Line();
-                Octave.lineOctave = OctaveNum;
                 Console.Clear();
+                GlobalNum.Num = OctaveNum; 
             } while (key.Key != ConsoleKey.Escape);
         }
     }
-    public class Line
-    {
-        public int lineOctave;
-    }
+
 }

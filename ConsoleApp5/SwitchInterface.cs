@@ -16,11 +16,12 @@ namespace ConsoleApp5
                     Piano.pianoApp();
                     break; 
                 case 1:
-                    Setting.SettingInside();
+                     Setting.SettingInside();
+                    break;
+                case 2:
+                    Environment.Exit(0);
                     break;
             }
-
-
         }
     }
 }

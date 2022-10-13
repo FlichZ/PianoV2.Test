@@ -12,10 +12,8 @@ namespace ConsoleApp5
     {
         public static void pianoApp()
         {
+            int line = GlobalNum.Num;
             Console.Clear();
-            int line = 1;
-            Line Octave = new Line();
-            line = Octave.lineOctave;
             ConsoleKeyInfo key;
             int[,] octavesNotes = new int[,] { { 16, 17, 18, 19, 20, 21, 23, 24, 25, 27, 29, 30 },
                                                   { 32, 34, 36, 38, 41, 43, 46, 49, 51, 55, 58, 61 },
@@ -29,7 +27,7 @@ namespace ConsoleApp5
             do
             {
                 Console.WriteLine("ESC - выход из программы");
-                Console.WriteLine($"Текущая октава - {line+1}");
+                Console.WriteLine($"Текущая октава - {line}");
 
                 key = Console.ReadKey();
                 switch (key.Key)
@@ -73,8 +71,6 @@ namespace ConsoleApp5
                 }
                 Console.Clear();
             } while (key.Key != ConsoleKey.Escape);
-
-
         }
 
         public static void Voice(int note)
