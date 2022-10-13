@@ -1,14 +1,23 @@
-﻿namespace The_piano
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static ConsoleApp5.Setting;
+
+namespace ConsoleApp5
 {
-    internal class Program
+
+    internal class Piano
     {
-        static void Main(string[] args)
+        public static void pianoApp()
         {
+            Console.Clear();
+            int line = 1;
+            Line Octave = new Line();
+            line = Octave.lineOctave;
             ConsoleKeyInfo key;
-            int OctaveNum = 1;
-
-
-            int[,] OctavesSwitcher = new int[,] { { 16, 17, 18, 19, 20, 21, 23, 24, 25, 27, 29, 30 },
+            int[,] octavesNotes = new int[,] { { 16, 17, 18, 19, 20, 21, 23, 24, 25, 27, 29, 30 },
                                                   { 32, 34, 36, 38, 41, 43, 46, 49, 51, 55, 58, 61 },
                                                 { 65, 69, 73, 77, 82, 87, 92, 98, 103, 110, 116, 123 },
                                             { 130, 138, 146, 155, 164, 174, 185, 196, 207, 220, 233, 246 },
@@ -19,71 +28,56 @@
                                       { 4186, 4435, 4699, 4978, 5274, 5588, 5920, 6272, 6645, 7040, 7459, 7902 }};
             do
             {
-                Console.WriteLine("F5 - уменьшить октаву на 1");
-                Console.WriteLine("F6 - увеличить октаву на 1");
-                Console.WriteLine("F9 - выход из программы");
-                Console.WriteLine($"Текущая октава - {OctaveNum}");
+                Console.WriteLine("ESC - выход из программы");
+                Console.WriteLine($"Текущая октава - {line+1}");
 
                 key = Console.ReadKey();
                 switch (key.Key)
                 {
                     case ConsoleKey.A:
-                        Voice(OctavesSwitcher[OctaveNum,0]);
+                        Voice(octavesNotes[line, 0]);
                         break;
                     case ConsoleKey.B:
-                        Voice(OctavesSwitcher[OctaveNum, 1]);
+                        Voice(octavesNotes[line, 1]);
                         break;
                     case ConsoleKey.C:
-                        Voice(OctavesSwitcher[OctaveNum, 2]);
+                        Voice(octavesNotes[line, 2]);
                         break;
                     case ConsoleKey.D:
-                        Voice(OctavesSwitcher[OctaveNum, 3]);
+                        Voice(octavesNotes[line, 3]);
                         break;
                     case ConsoleKey.E:
-                        Voice(OctavesSwitcher[OctaveNum, 4]);
+                        Voice(octavesNotes[line, 4]);
                         break;
                     case ConsoleKey.F:
-                        Voice(OctavesSwitcher[OctaveNum, 5]);
+                        Voice(octavesNotes[line, 5]);
                         break;
                     case ConsoleKey.G:
-                        Voice(OctavesSwitcher[OctaveNum, 6]);
+                        Voice(octavesNotes[line, 6]);
                         break;
                     case ConsoleKey.H:
-                        Voice(OctavesSwitcher[OctaveNum, 7]);
+                        Voice(octavesNotes[line, 7]);
                         break;
                     case ConsoleKey.I:
-                        Voice(OctavesSwitcher[OctaveNum, 8]);
+                        Voice(octavesNotes[line, 8]);
                         break;
                     case ConsoleKey.J:
-                        Voice(OctavesSwitcher[OctaveNum, 9]);
+                        Voice(octavesNotes[line, 9]);
                         break;
                     case ConsoleKey.K:
-                        Voice(OctavesSwitcher[OctaveNum, 10]);
+                        Voice(octavesNotes[line, 10]);
                         break;
                     case ConsoleKey.L:
-                        Voice(OctavesSwitcher[OctaveNum, 11]);
-                        break;
-                    case ConsoleKey.F5:
-                        OctaveNum--;
-                        if (OctaveNum == 0)
-                        {
-                            OctaveNum = 1;
-                        }
-                        break;
-                    case ConsoleKey.F6:
-                        OctaveNum++;
-                        if (OctaveNum == 10)
-                        {
-                            OctaveNum = 9;
-                        }
+                        Voice(octavesNotes[line, 11]);
                         break;
                 }
                 Console.Clear();
-            } while (key.Key != ConsoleKey.F9);
-            
+            } while (key.Key != ConsoleKey.Escape);
+
+
         }
 
-        static void Voice(int note)
+        public static void Voice(int note)
         {
             if (note < 37)
             {

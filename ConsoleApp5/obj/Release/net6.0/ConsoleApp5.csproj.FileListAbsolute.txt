@@ -1,0 +1,15 @@
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\bin\Release\net6.0\ConsoleApp5.exe
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\bin\Release\net6.0\ConsoleApp5.deps.json
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\bin\Release\net6.0\ConsoleApp5.runtimeconfig.json
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\bin\Release\net6.0\ConsoleApp5.dll
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\bin\Release\net6.0\ConsoleApp5.pdb
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ConsoleApp5.csproj.AssemblyReference.cache
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ConsoleApp5.GeneratedMSBuildEditorConfig.editorconfig
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ConsoleApp5.AssemblyInfoInputs.cache
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ConsoleApp5.AssemblyInfo.cs
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ConsoleApp5.csproj.CoreCompileInputs.cache
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ConsoleApp5.dll
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\refint\ConsoleApp5.dll
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ConsoleApp5.pdb
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ConsoleApp5.genruntimeconfig.cache
+C:\P50-2-21\OAIP Sophia\ConsoleApp5\ConsoleApp5\obj\Release\net6.0\ref\ConsoleApp5.dll
